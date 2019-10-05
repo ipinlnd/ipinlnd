@@ -24,24 +24,40 @@ class Slider extends React.Component<SliderProps, SliderStates> {
     };
   }
 
-  _handleScroll(event: Event) {
+  handleScroll(event: Event) {
     let index = this.state.index;
-    let nextIndex = this.state.nextIndex;
-    if ((event as WheelEvent).deltaY > 0) {
-      if (index < this.props.children.length - 1 && !this.state.animating) {
-        this.setState({ nextIndex: index + 1, animating: true });
-      }
-    } else if ((event as WheelEvent).deltaY < 0 && !this.state.animating) {
-      if (index > 0) {
-        this.setState({ nextIndex: index - 1, animating: true });
-      }
+    if (this.state.animating) return;
+
+    if (
+      (event as WheelEvent).deltaY > 0 &&
+      index < this.props.children.length - 1
+    ) {
+      this.setState({ nextIndex: index + 1, animating: true });
+    } else if ((event as WheelEvent).deltaY < 0 && index > 0) {
+      this.setState({ nextIndex: index - 1, animating: true });
     }
   }
+
+  handleKeyDown(event: Event) {
+    let index = this.state.index;
+    if (this.state.animating) return;
+    if (
+      (event as KeyboardEvent).key === "ArrowDown" &&
+      index < this.props.children.length - 1
+    ) {
+      this.setState({ nextIndex: index + 1, animating: true });
+    } else if ((event as KeyboardEvent).key === "ArrowUp" && index > 0) {
+      this.setState({ nextIndex: index - 1, animating: true });
+    }
+  }
+
   componentDidMount() {
-    window.addEventListener("mousewheel", this._handleScroll.bind(this));
+    window.addEventListener("mousewheel", this.handleScroll.bind(this));
+    window.addEventListener("keydown", this.handleKeyDown.bind(this));
   }
   componentWillUnmount() {
-    window.removeEventListener("mousewheel", this._handleScroll.bind(this));
+    window.removeEventListener("mousewheel", this.handleScroll.bind(this));
+    window.removeEventListener("keydown", this.handleKeyDown.bind(this));
   }
 
   componentDidUpdate() {
@@ -61,7 +77,7 @@ class Slider extends React.Component<SliderProps, SliderStates> {
       const moveUp = this.state.nextIndex > this.state.index;
       const moveDown = this.state.nextIndex < this.state.index;
       return (
-        <div style={{ overflow: "hidden" }}>
+        <div>
           <SliderStyledComponents.SlideChild
             style={{ top: 0 }}
             ref={node => (this.container = node)}
@@ -92,7 +108,7 @@ class Slider extends React.Component<SliderProps, SliderStates> {
   };
 
   render() {
-    return <div style={{ overflow: "hidden" }}>{this.getChild()}</div>;
+    return <div>{this.getChild()}</div>;
   }
 }
 

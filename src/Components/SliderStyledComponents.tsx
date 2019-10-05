@@ -3,15 +3,18 @@ import styled, { keyframes, css } from "styled-components";
 interface SlideProps {
   isMovingUp?: boolean;
   isMovingDown?: boolean;
-  isSecond?: boolean;
 }
 
 const moveUp = keyframes`
-  to{transform: translatey(-100vh);}
+  to {
+    transform: translatey(-100vh);
+  }
 `;
 
 const moveDown = keyframes`
-  to{transform: translatey(100vh);}
+  to {
+    transform: translatey(100vh);
+  }
 `;
 
 const SlideChild = styled.div`

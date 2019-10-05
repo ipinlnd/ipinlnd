@@ -38,7 +38,7 @@ const SlideA = () => {
 const SlideB = () => {
   return (
     <SlideComponent background="#1a1e22">
-      <Contents style={{ fontSize: "3vw" }}>My name is Ali Rezaee</Contents>
+      <Contents style={{ fontSize: "3vw" }}>My name is Ali</Contents>
     </SlideComponent>
   );
 };
