@@ -6,6 +6,12 @@ body {
     overflow-y: hidden;
 }
 
+@media (max-width: 400px) {
+    body {
+        overflow-y: scroll;
+    }
+}
+
 code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
