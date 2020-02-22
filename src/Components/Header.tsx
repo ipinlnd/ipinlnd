@@ -7,8 +7,8 @@ const Header = () => {
     <SharedComponents.Container background="#5B6C5D">
       <SharedComponents.FadeInContent style={{ fontSize: "3vw" }}>
         <h1>Ali Rezaee</h1>
-        <SharedComponents.RowContainer>
-          <img src={me} width="300px" />
+        <SharedComponents.RowContainer style={{ alignItems: "center" }}>
+          <img alt="ipinlnd" src={me} width="200px" />
           <p style={{ fontSize: "18px", textAlign: "left" }}>
             Email:{" "}
             <SharedComponents.Link href="mailto:nlndipi@hotmail.com">

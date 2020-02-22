@@ -11,7 +11,7 @@ export const Communere1 = () => {
             href="http://communere.com"
             style={{ textDecoration: "none", color: "white" }}
           >
-            <h1 style={{ fontSize: "70px" }}>Communere</h1>
+            <SharedComponents.Header>Communere</SharedComponents.Header>
           </a>
           <p style={{ fontSize: "30px" }}>Full-Stack Developer</p>
           <p style={{ fontSize: "25px" }}>January 2019 - Now</p>
@@ -21,36 +21,40 @@ export const Communere1 = () => {
           </p>
         </div>
         <SharedComponents.RowContainer>
-          <SharedComponents.Card style={{ width: "45%" }}>
-            <strong>Trim-It</strong> <br />
-            An app powered barbershop. I was responsible for developing on the
-            project as a full-stack developer. This was my first remote
-            experience. <br /> <br />
-            • Developing the backend server using Node.js and express <br />
-            • Using GraphQL as the communication tech <br />
-            • Developing the mobile app using React-native <br />
-            • Using apollo as middleware <br />
-            • Using native-base UI Kit to develop the app UI <br />• Using
-            Typescript for type checking throughout the whole project <br />•
-            Working remotely and in a team
-          </SharedComponents.Card>
-          <SharedComponents.Card style={{ width: "45%" }}>
-            <strong>MemberMatch</strong> <br />A project to help golfers plan
-            matches, and meet other golfers. Written for both web and mobile, it
-            uses ASP.NET as the base system and Xamarin for the applications.
-            Working as the sole developer on the project, I proposed lots of
-            optimizations to the code which ended up improving the performance
-            on both frontend and backend. <br />
-            <br />• Developing the server and the website using ASP.NET and MVC{" "}
-            <br />
-            • Maintaining and further development of the SQL Database
-            <br />
-            • Developing the mobile application using Xamarin on both android
-            and ios <br />
-            • Working remotely <br />
-            • Published app on google play and Appstor <br />• Using hangfire
-            queue system for long-awaiting tasks
-          </SharedComponents.Card>
+          <SharedComponents.RowItem>
+            <SharedComponents.Card>
+              <strong>Trim-It</strong> <br />
+              An app powered barbershop. I was responsible for developing on the
+              project as a full-stack developer. This was my first remote
+              experience. <br /> <br />
+              • Developing the backend server using Node.js and express <br />
+              • Using GraphQL as the communication tech <br />
+              • Developing the mobile app using React-native <br />
+              • Using apollo as middleware <br />
+              • Using native-base UI Kit to develop the app UI <br />• Using
+              Typescript for type checking throughout the whole project <br />•
+              Working remotely and in a team
+            </SharedComponents.Card>
+          </SharedComponents.RowItem>
+          <SharedComponents.RowItem>
+            <SharedComponents.Card>
+              <strong>MemberMatch</strong> <br />A project to help golfers plan
+              matches, and meet other golfers. Written for both web and mobile,
+              it uses ASP.NET as the base system and Xamarin for the
+              applications. Working as the sole developer on the project, I
+              proposed lots of optimizations to the code which ended up
+              improving the performance on both frontend and backend. <br />
+              <br />• Developing the server and the website using ASP.NET and
+              MVC <br />
+              • Maintaining and further development of the SQL Database
+              <br />
+              • Developing the mobile application using Xamarin on both android
+              and ios <br />
+              • Working remotely <br />
+              • Published app on google play and Appstor <br />• Using hangfire
+              queue system for long-awaiting tasks
+            </SharedComponents.Card>
+          </SharedComponents.RowItem>
         </SharedComponents.RowContainer>
       </SharedComponents.FadeInContent>
     </SharedComponents.Container>
