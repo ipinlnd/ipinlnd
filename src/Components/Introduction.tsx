@@ -13,8 +13,9 @@ export const Introduction = () => {
           passion for visual software, I switched to full-stack development. I
           enjoy creating visually appealing applications and have experience
           working with several different technologies on mobile and web
-          applications. I’ve been looking for remote jobs in Europe to gain a
-          richer international experience
+          applications. I’ve been looking for remote jobs or jobs that can help
+          me relocate to Europe to gain a richer international experience for
+          future when i'm trying to move there
         </p>
       </SharedComponents.FadeInContent>
     </SharedComponents.Container>
