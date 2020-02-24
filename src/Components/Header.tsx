@@ -28,10 +28,6 @@ const Header = () => {
             <SharedComponents.Link href="http://twitter.com/ipinlnd">
               Twitter
             </SharedComponents.Link>
-            ,{" "}
-            <SharedComponents.Link href="http://twitter.com/nonbinarymcchi1">
-              Another Twitter
-            </SharedComponents.Link>
           </p>
         </SharedComponents.RowContainer>
       </SharedComponents.FadeInContent>
