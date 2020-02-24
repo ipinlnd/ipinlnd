@@ -39,7 +39,6 @@ export const Communere3 = () => {
             • Development of the application using React <br />
             • Redux <br />
             • Working with Material-UI as the UI kit <br />
-            • Redux <br />
             • Working remotely and in a team <br />
           </SharedComponents.Card>
         </SharedComponents.RowContainer>
