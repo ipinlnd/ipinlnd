@@ -12,17 +12,9 @@ export const Outroduction = () => {
           </span>
         </SharedComponents.Header>
         <p style={{ fontSize: "18px", textAlign: "left" }}>
-          While this website currently only introduces me in an unnecessarily
-          complicated way, I hope to soon add more to it. I'll probably start
-          blogging and showcasing my works here in form of a gallery. <br />{" "}
-          <br />
-          <strong>
-            Anyway, if you got tired of scrolling through this, here's the pdf
-            file of my CV
-          </strong>
-          :{" "}
+          <strong>If you got tired of scrolling through this, here's </strong>
           <SharedComponents.Link href="/Ali Rezaee.pdf">
-            Link to CV
+            the pdf file of my CV
           </SharedComponents.Link>
         </p>
       </SharedComponents.FadeInContent>

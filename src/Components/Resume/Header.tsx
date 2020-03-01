@@ -1,6 +1,7 @@
 import React from "react";
 import { SharedComponents } from "./Container";
-import me from "../Assets/me.png";
+import me from "../../Assets/me.png";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
@@ -30,6 +31,11 @@ const Header = () => {
             </SharedComponents.Link>
           </p>
         </SharedComponents.RowContainer>
+        <Link to="/blog">
+          <SharedComponents.BlogButton>
+            <span>Go to blog</span>
+          </SharedComponents.BlogButton>
+        </Link>
       </SharedComponents.FadeInContent>
     </SharedComponents.Container>
   );

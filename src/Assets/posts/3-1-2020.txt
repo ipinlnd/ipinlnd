@@ -1,0 +1,114 @@
+interface Employee {
+  livesAlone: boolean;
+  canManage: boolean;
+  isSenior: boolean;
+}
+
+const prosAndCons = (employee: Employee, subject: string): string => {
+  switch (subject) {
+    case "Focus":
+      if (employee.livesAlone) {
+        return "The employee will be much more focused now that they live alone. \
+        They won't be distracted by any other co-workers.";
+      } else {
+        return "The employee will most likely be distracted by other family members. \
+          Specially if there are little children around. \
+          It would be better for these employees to work in a better workplace \
+          where they can focus on their work.";
+      }
+    case "Performance":
+      if (employee.canManage) {
+        return "The employee will be able to manage their time and their tasks \
+          Also, if the employee is `Focused` then they would be of the highest performance.";
+      } else {
+        return "The employee would need a manager to look over him and make sure \
+          they're making their deadlines and workng when they should. \
+          Also, if the employee is `Not Focused` then they would be of the lowest performance.";
+      }
+    case "Cost":
+      return "Remote working is very cost efficient in general. Both for \
+        the employee and the employer. \
+         - Not cost of electricity or other utilities, no need for space \
+         - No transportation cost";
+    case "Communication":
+      return "Communication is generally harder in a remote environment. \ 
+        Internet stability and speed may vary based on the employee's location";
+    case "Management":
+      if (employee.isSenior) {
+        return (
+          "Seniors generally are more capable of self-management so managing them  \ 
+          would be easier in a remote environment. That's why most \
+          remote job positions are looking to hire senior employees."
+        );
+      } else {
+        return (
+          "There are always exceptions to the rules, but juniors are new  \ 
+          to the game and so they may still not know the ropes of a professional \
+          work environment. So they would require more micro-management."
+        );
+      }
+    default:
+      return "";
+  }
+};
+
+const getProsAndCons = (employee: Employee) => {
+  return [
+    {
+      subject: "Focus",
+      result: prosAndCons(employee, "Focus")
+    },
+    {
+      subject: "Performance",
+      result: prosAndCons(employee, "Performance")
+    },
+    {
+      subject: "Cost",
+      result: prosAndCons(employee, "Cost")
+    },
+    {
+      subject: "Communication",
+      result: prosAndCons(employee, "Communication")
+    },
+    {
+      subject: "Management",
+      result: prosAndCons(employee, "Management")
+    }
+  ];
+};
+
+const blogPost = () => {
+  const employee1: Employee = {
+    canManage: true,
+    isSenior: true,
+    livesAlone: true
+  };
+  const employee2: Employee = {
+    canManage: false,
+    isSenior: false,
+    livesAlone: false
+  };
+
+  const intro =
+    "I decided that as my first post on this blog, i write about remote working. \
+    And well, i've been struggling with myself since  3 AM this morning that \ 
+    'I want to make something! What should i make??', so i decided to make \
+    this blog post a little creative. <br /> \
+    This post is a Pros and Cons list of remote working, for both the worst and the best \ 
+    case scenarios. <br /> <br />";
+
+  const worst = getProsAndCons(employee2);
+  const best = getProsAndCons(employee1);
+
+  let body = "";
+  for (let i = 0; i < worst.length; i++) {
+    body += "<h2>" + worst[i].subject + "</h2> <br />";
+    body += "<h3> Worst </h3><br />" + "<p>" + worst[i].result + "</p>";
+    body += "<h3> Best </h3><br />" + "<p>" + best[i].result + "</p>";
+    body += "<br /> <br />";
+  }
+
+  return intro + body;
+};
+
+blogPost();

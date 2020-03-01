@@ -104,6 +104,50 @@ const GridCard = styled.div`
   }
 `;
 
+const BlogButton = styled.button`
+  position: absolute;
+  top: 1%;
+  right: 5%;
+  display: inline-block;
+  border-radius: 4px;
+  background-color: #a2afa3;
+  border: none;
+  color: #ffffff;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+  span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  span:after {
+    content: "»";
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  &:hover span {
+    padding-right: 25px;
+  }
+  &:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  @media only screen and (max-width: 700px) {
+    font-size: 18px;
+    width: 100px;
+    padding: 5px;
+  }
+`;
+
 const SharedComponents = {
   Container,
   FadeInContent,
@@ -114,7 +158,8 @@ const SharedComponents = {
   Card,
   Header,
   Grid,
-  GridCard
+  GridCard,
+  BlogButton
 };
 
 export { SharedComponents };
