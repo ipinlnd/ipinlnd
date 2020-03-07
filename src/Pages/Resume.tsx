@@ -1,6 +1,5 @@
 import React from "react";
 import "../App.css";
-import { Slider } from "nlnd-slider";
 import { Header } from "../Components/Resume/Header";
 import { Introduction } from "../Components/Resume/Introduction";
 import { Zharfpouyan } from "../Components/Resume/Zharfpouyan";
@@ -23,38 +22,36 @@ const FullHeight = styled.div`
 const Resume: React.FC = () => {
   return (
     <div className="App">
-      <Slider>
-        <FullHeight>
-          <Header />
-        </FullHeight>
-        <FullHeight>
-          <Introduction />
-        </FullHeight>
-        <FullHeight>
-          <Zharfpouyan />
-        </FullHeight>
-        <FullHeight>
-          <Communere1 />
-        </FullHeight>
-        <FullHeight>
-          <Communere2 />
-        </FullHeight>
-        <FullHeight>
-          <Communere3 />
-        </FullHeight>
-        <FullHeight>
-          <OtherActivities />
-        </FullHeight>
-        <FullHeight>
-          <Education />
-        </FullHeight>
-        <FullHeight>
-          <Skills />
-        </FullHeight>
-        <FullHeight>
-          <Outroduction />
-        </FullHeight>
-      </Slider>
+      <FullHeight>
+        <Header />
+      </FullHeight>
+      <FullHeight>
+        <Introduction />
+      </FullHeight>
+      <FullHeight>
+        <Zharfpouyan />
+      </FullHeight>
+      <FullHeight>
+        <Communere1 />
+      </FullHeight>
+      <FullHeight>
+        <Communere2 />
+      </FullHeight>
+      <FullHeight>
+        <Communere3 />
+      </FullHeight>
+      <FullHeight>
+        <OtherActivities />
+      </FullHeight>
+      <FullHeight>
+        <Education />
+      </FullHeight>
+      <FullHeight>
+        <Skills />
+      </FullHeight>
+      <FullHeight>
+        <Outroduction />
+      </FullHeight>
     </div>
   );
 };
