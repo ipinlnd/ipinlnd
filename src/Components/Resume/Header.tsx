@@ -1,5 +1,4 @@
 import React from "react";
-import { SharedComponents } from "./Container";
 import me from "../../Assets/me.png";
 import email from "../../Assets/email.png";
 import phone from "../../Assets/phone.png";
@@ -53,8 +52,9 @@ const Title = styled.h1`
   font-weight: bold;
   color: white;
   padding: 2%;
-  margin-top: 10%;
+  margin-top: 30%;
   padding-bottom: 0%;
+  margin-bottom: 5%;
   @media only screen and (max-width: 700px) {
     font-size: 32px;
     margin-top: 0%;
@@ -71,10 +71,10 @@ const Header = () => {
           <Avatar alt="ipinlnd" src={me} />
         </ColumnContainer>
         <ColumnContainer
-          width="50%"
+          width="30%"
           alignItems="flex-start"
           justifyContent="flex-start"
-          height="50%"
+          height="60%"
         >
           <Title>Ali Rezaee</Title>
           <ColumnContainer

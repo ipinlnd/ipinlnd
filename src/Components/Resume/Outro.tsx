@@ -1,23 +1,17 @@
 import React from "react";
 import { SharedComponents } from "./Container";
+import { SectionContainer, Title, Paragraph, Link } from "./Shared";
 
 export const Outroduction = () => {
   return (
-    <SharedComponents.Container background="#334936">
+    <SectionContainer color="#384E3B">
       <SharedComponents.FadeInContent>
-        <SharedComponents.Header style={{ lineHeight: "2.5rem" }}>
-          Outroduction <br />
-          <span style={{ fontSize: "2vmin" }}>
-            (Which should definitely become a word)
-          </span>
-        </SharedComponents.Header>
-        <p style={{ fontSize: "18px", textAlign: "left" }}>
-          <strong>If you got tired of scrolling through this, here's </strong>
-          <SharedComponents.Link href="/Ali Rezaee.pdf">
-            the pdf file of my CV
-          </SharedComponents.Link>
-        </p>
+        <Title>Outroduction</Title>
+        <Paragraph>
+          If you got tired of scrolling through this, here's
+          <Link href="/Ali Rezaee.pdf"> the pdf file of my CV</Link>
+        </Paragraph>
       </SharedComponents.FadeInContent>
-    </SharedComponents.Container>
+    </SectionContainer>
   );
 };

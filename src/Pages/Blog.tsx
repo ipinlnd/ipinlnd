@@ -22,9 +22,7 @@ export const Blog = () => {
       <SharedComponents.Container>
         <SharedComponents.Header>
           <Link to="/" style={{ textDecoration: "none", color: "white" }}>
-            <SharedComponents.HeaderText>
-              IPINLND: Blog
-            </SharedComponents.HeaderText>
+            <SharedComponents.HeaderText>IPINLND</SharedComponents.HeaderText>
           </Link>
         </SharedComponents.Header>
         <BrowserRouter>

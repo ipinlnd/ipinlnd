@@ -1,13 +1,12 @@
 import React from "react";
 import { SharedComponents } from "./Container";
+import { SectionContainer, Title } from "./Shared";
 
 export const Skills = () => {
   return (
-    <SharedComponents.Container background="red">
+    <SectionContainer color="#4F6E55">
       <SharedComponents.FadeInContent>
-        <div>
-          <SharedComponents.Header>Skills</SharedComponents.Header>
-        </div>
+        <Title>Skills</Title>
         <SharedComponents.Grid>
           <SharedComponents.GridCard>
             <h1>JavaScript</h1>
@@ -38,6 +37,6 @@ export const Skills = () => {
           </SharedComponents.GridCard>
         </SharedComponents.Grid>
       </SharedComponents.FadeInContent>
-    </SharedComponents.Container>
+    </SectionContainer>
   );
 };
