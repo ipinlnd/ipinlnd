@@ -29,7 +29,7 @@ const Grid = styled.div`
 const GridCard = styled.div`
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
-  background-color: white;
+  background-color: #B8C5BB;
   color: black;
   margin: 1%;
   font-size: 14px;
