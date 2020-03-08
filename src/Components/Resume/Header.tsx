@@ -67,7 +67,7 @@ const Header = () => {
     <SectionContainer color="#5B6B5D">
       <BottomBackground />
       <RowContainer width="100%" height="100%" style={{ zIndex: 1 }}>
-        <ColumnContainer width="20%">
+        <ColumnContainer width="25%">
           <Avatar alt="ipinlnd" src={me} />
         </ColumnContainer>
         <ColumnContainer
