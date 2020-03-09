@@ -15,7 +15,7 @@ export const Zharfpouyan = () => {
           <SharedComponents.RowItem>
             <p style={{ fontSize: 18, color: "#354137", textAlign: "left" }}>
               The company’s main product was network routers. I, as a c/c++ developer, had the
-              responsibility to develop router related software and services, Test the developed
+              responsibility of developing router related software and services, Test the developed
               services in a simulated network scenario and maintain older services. Being my first
               experience, it taught me a lot about working in a professional environment, from basic
               development processes, to cooperating with teammates on projects, getting help and

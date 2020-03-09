@@ -31,16 +31,16 @@ export const Communere1 = () => {
             <Card color="#A3DEE2" height="290px">
               <strong>MemberMatch</strong> <br />A project to help golfers plan matches, and meet
               other golfers. Written for both web and mobile, it uses ASP.NET as the base system and
-              Xamarin for the applications. Working as the sole developer on the project, I proposed
-              lots of optimizations to the code which ended up improving the performance on both
-              frontend and backend. <br />
-              <br />• Developing the server and the website using ASP.NET and MVC <br />
+              Xamarin for the applications. Working almost as the sole developer on the project, I
+              proposed lots of optimizations to the code which ended up improving the performance on
+              both frontend and backend. <br /> <br />
+              • Maintaining and further development of the server and the website using ASP.NET and
+              MVC <br />
               • Maintaining and further development of the SQL Database
               <br />
+              • Using hangfire queue system for long-awaiting tasks <br />
               • Developing the mobile application using Xamarin on both android and ios <br />
-              • Working remotely <br />
-              • Published app on google play and Appstor <br />• Using hangfire queue system for
-              long-awaiting tasks
+              • Published app on google play and Appstor <br />• Working remotely
             </Card>
           </SharedComponents.RowItem>
         </RowContainer>
