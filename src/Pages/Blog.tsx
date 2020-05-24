@@ -4,16 +4,20 @@ import { MainContent } from "../Components/Blog/MainContent";
 import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import { P312020 } from "../Components/Blog/p3-1-2020";
 import DocumentMeta from "react-document-meta";
+import { P5242020 } from "../Components/Blog/p5-24-2020";
 
 const meta = {
   title: "ipinlnd:blog",
   description: "blog by Ali Rezaee (ipinlnd)",
-  canonical: "https://ipinlnd.com/blog",
+  canonical: "https://ipinlnd.com",
   meta: {
+    charset: "utf-8",
     name: {
-      keywords: "ipinlnd, react, ali_reazaee, blog, remote working, remote, job"
-    }
-  }
+      keywords: "ipinlnd, react, ali_reazaee, blog",
+      "og:title": "Ali Rezaee's personal website",
+      viewport: "width=device-width, initial-scale=1",
+    },
+  },
 };
 
 export const Blog = () => {
@@ -29,6 +33,9 @@ export const Blog = () => {
           <Switch>
             <Route path="/blog/3-1-2020">
               <P312020 />
+            </Route>
+            <Route path="/blog/5-24-2020">
+              <P5242020 />
             </Route>
             <Route path="/blog">
               <MainContent />
