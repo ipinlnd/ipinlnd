@@ -27,6 +27,7 @@ export const SectionContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
+  max-width: 1500px;
   min-height: 100vh;
   height: ${(props: SectionProps) => props.height || "100vh"};
   background-color: ${(props: SectionProps) => props.color};
@@ -34,7 +35,6 @@ export const SectionContainer = styled.div`
   justify-content: center;
   position: relative;
   font-family: "Noto Sans", sans-serif;
-  padding-bottom: 5%;
   @media only screen and (max-width: 700px) {
     height: 100%;
     min-height: 100%;
@@ -49,6 +49,7 @@ export const RowContainer = styled.div`
     props.justifyContent || "center"};
   width: ${(props: ContainerProps) => props.width || "unset"};
   height: ${(props: ContainerProps) => props.height || "unset"};
+  transition: 1s;
   @media only screen and (max-width: 700px) {
     flex-direction: ${(props: ContainerProps) =>
       props.sameOnPhone ? "row" : "column"};
@@ -66,19 +67,11 @@ export const ColumnContainer = styled.div`
     props.justifyContent || "center"};
   width: ${(props: ContainerProps) => props.width || "unset"};
   height: ${(props: ContainerProps) => props.height || "unset"};
+  transition: 1s;
   @media only screen and (max-width: 700px) {
     align-items: center;
     justify-content: center;
     width: 100%;
-  }
-`;
-
-export const Avatar = styled.img`
-  border-radius: 100%;
-  border: 10px solid #5b6b5d;
-  width: 300px;
-  @media only screen and (max-width: 700px) {
-    width: 100px;
   }
 `;
 
@@ -119,7 +112,7 @@ export const TitleLink = styled.a`
 
 export const Paragraph = styled.p`
   color: ${(props: ContentProps) => props.fontColor || "white"};
-  padding: 1%;
+  padding: 1% 2%;
   font-size: 20px;
   text-align: left;
   font-family: "Noto Sans", sans-serif;
@@ -131,8 +124,7 @@ export const Paragraph = styled.p`
 export const Link = styled.a`
   font-family: "Noto Sans", sans-serif;
   font-size: 20px;
-  font-weight: normal;
-  color: white;
+
   text-decoration: none;
   color: white;
 `;

@@ -1,3 +1,15 @@
 .App {
-    text-align: center;
+  text-align: center;
+  scroll-behavior: smooth;
+  touch-action: none;
+  overflow-y: hidden;
+}
+
+path {
+  fill: red;
+}
+
+::-webkit-scrollbar {
+  display: none;
+  overflow: hidden;
 }

@@ -1,23 +1,7 @@
 import React from "react";
 import "../App.css";
-import { Header } from "../Components/Resume/Header";
-import { Introduction } from "../Components/Resume/Introduction";
-import { Zharfpouyan } from "../Components/Resume/Zharfpouyan";
-import { Communere1 } from "../Components/Resume/Communere1";
-import { OtherActivities } from "../Components/Resume/OtherActivities";
-import styled from "styled-components";
-import { Education } from "../Components/Resume/Education";
-import { Skills } from "../Components/Resume/Skills";
-import { Outroduction } from "../Components/Resume/Outro";
 import DocumentMeta from "react-document-meta";
-
-const FullHeight = styled.div`
-  min-height: 100vh;
-  @media only screen and (max-width: 700px) {
-    height: unset;
-    min-height: unset;
-  }
-`;
+import { Slider } from "../Slider";
 
 const meta = {
   title: "ipinlnd",
@@ -36,34 +20,11 @@ const meta = {
   },
 };
 
-const Resume: React.FC = () => {
+const Resume = () => {
   return (
     <DocumentMeta {...meta}>
       <div className="App">
-        <FullHeight>
-          <Header />
-        </FullHeight>
-        <FullHeight>
-          <Introduction />
-        </FullHeight>
-        <FullHeight>
-          <Zharfpouyan />
-        </FullHeight>
-        <FullHeight>
-          <Communere1 />
-        </FullHeight>
-        <FullHeight>
-          <OtherActivities />
-        </FullHeight>
-        <FullHeight>
-          <Education />
-        </FullHeight>
-        <FullHeight>
-          <Skills />
-        </FullHeight>
-        <FullHeight>
-          <Outroduction />
-        </FullHeight>
+        <Slider></Slider>
       </div>
     </DocumentMeta>
   );
