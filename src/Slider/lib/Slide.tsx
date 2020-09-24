@@ -43,12 +43,12 @@ const FadeInContent = styled.div`
   transition: 1s;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   overflow-y: auto;
-  .div {
-    visibility: ${(props: Props) => (props.visible ? "visible" : "hidden")};
+  div {
     opacity: ${(props: Props) => (props.visible ? "1" : "0")};
+    transition: opacity 1s 0.2s;
   }
 `;
 
@@ -57,7 +57,7 @@ const HeaderContainer = styled(FadeInContent)`
   left: 0;
   position: fixed;
   height: ${(props: Props) =>
-    props.index === props.current ? "100vh" : "10vh"};
+    props.index === props.current ? "100vh" : "70px"};
 `;
 
 export { Slide };

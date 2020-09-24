@@ -11,6 +11,7 @@ interface ContainerProps {
   width?: string;
   height?: string;
   sameOnPhone?: boolean;
+  padding?: string;
 }
 
 interface ContentProps {
@@ -21,24 +22,20 @@ interface CardProps {
   color?: string;
   height?: string;
   width?: string;
+  margin?: string;
 }
 
 export const SectionContainer = styled.div`
   display: flex;
   flex-direction: column;
   width: 100%;
-  max-width: 1500px;
-  min-height: 100vh;
+
   height: ${(props: SectionProps) => props.height || "100vh"};
   background-color: ${(props: SectionProps) => props.color};
   align-items: center;
   justify-content: center;
   position: relative;
   font-family: "Noto Sans", sans-serif;
-  @media only screen and (max-width: 700px) {
-    height: 100%;
-    min-height: 100%;
-  }
 `;
 
 export const RowContainer = styled.div`
@@ -49,13 +46,13 @@ export const RowContainer = styled.div`
     props.justifyContent || "center"};
   width: ${(props: ContainerProps) => props.width || "unset"};
   height: ${(props: ContainerProps) => props.height || "unset"};
+  padding: ${(props: ContainerProps) => props.padding || "unset"};
   transition: 1s;
   @media only screen and (max-width: 700px) {
     flex-direction: ${(props: ContainerProps) =>
       props.sameOnPhone ? "row" : "column"};
     align-items: center;
     justify-content: center;
-    width: 100%;
   }
 `;
 
@@ -66,6 +63,7 @@ export const ColumnContainer = styled.div`
   justify-content: ${(props: ContainerProps) =>
     props.justifyContent || "center"};
   width: ${(props: ContainerProps) => props.width || "unset"};
+  padding: ${(props: ContainerProps) => props.padding || "unset"};
   height: ${(props: ContainerProps) => props.height || "unset"};
   transition: 1s;
   @media only screen and (max-width: 700px) {
@@ -137,8 +135,9 @@ export const Card = styled.div`
   text-align: left;
   padding: 2%;
   border-radius: 10px;
-  height: ${(props: ContainerProps) => props.height || "unset"};
-  width: ${(props: ContainerProps) => props.width || "unset"};
+  margin: ${(props: CardProps) => props.margin || "unset"};
+  height: ${(props: CardProps) => props.height || "unset"};
+  width: ${(props: CardProps) => props.width || "unset"};
   @media only screen and (max-width: 700px) {
     height: 100%;
     width: unset;

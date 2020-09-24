@@ -13,17 +13,21 @@ export const Communere1 = () => {
   return (
     <SectionContainer
       color="#00ABFB"
-      height="100%"
-      style={{ justifyContent: "flex-start" }}
+      height="unset"
+      style={{ justifyContent: "flex-start", paddingTop: "80px" }}
     >
       <TitleLink href="http://communere.com">Communere</TitleLink>
       <Title2>Full-Stack Developer</Title2>
       <Title2>January 2019 - Now</Title2>
-      <Paragraph>
+      <Paragraph style={{ marginTop: "0px" }}>
         Project-based development on various web and mobile applications. This
         is a remote position and the company is based in London.
       </Paragraph>
-      <RowContainer style={{ paddingBottom: "1%" }} alignItems="flex-start">
+      <RowContainer
+        padding="0 10px"
+        style={{ paddingBottom: "1%" }}
+        alignItems="flex-start"
+      >
         <SharedComponents.RowItem>
           <Card color="#A3DEE2" height="290px">
             <strong>Trim-It</strong> <br />
@@ -58,7 +62,7 @@ export const Communere1 = () => {
           </Card>
         </SharedComponents.RowItem>
       </RowContainer>
-      <RowContainer style={{ paddingBottom: "1%" }}>
+      <RowContainer padding="0 10px" style={{ paddingBottom: "1%" }}>
         <SharedComponents.RowItem>
           <Card color="#A3DEE2" height="300px">
             <strong>AGXIO</strong> <br />

@@ -28,7 +28,6 @@ const Header = (props: Props) => {
           <LinkContainer visible={props.visible}>
             <RowContainer
               justifyContent="flex-start"
-              width="100%"
               sameOnPhone
               style={{ paddingBottom: "1%" }}
             >
@@ -70,7 +69,6 @@ const Container = styled.div`
   flex-direction: ${(props: SectionProps) =>
     props.visible ? "column" : "row"};
   width: 100%;
-  max-width: 1500px;
   height: 100%;
   background-color: #060708;
   align-items: center;
@@ -145,9 +143,10 @@ const LinkContainer = styled.div`
     props.visible ? "column" : "row"};
   width: ${(props: SectionProps) => (props.visible ? "100%" : "30%")};
   justify-content: space-between;
-  align-items: center;
+  align-items: ${(props: SectionProps) =>
+    props.visible ? "flex-start" : "center"};
   @media only screen and (max-width: 700px) {
-    display: ${(props: SectionProps) => (props.visible ? "unset" : "none")};
+    display: ${(props: SectionProps) => (props.visible ? "flex" : "none")};
   }
 `;
 
@@ -156,8 +155,8 @@ const IconContainer = styled.div`
   flex-direction: row;
   align-items: center;
   justify-content: ${(props: SectionProps) =>
-    props.visible ? "flex-start" : "center"};
-  width: 100%;
+    props.visible ? "space-between" : "center"};
+  width: 50%;
   padding-bottom: 1%;
 `;
 

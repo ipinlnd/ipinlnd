@@ -18,10 +18,10 @@ const FadeInContent = styled.div`
 
 const RowItem = styled.div`
   flex: 1;
-  margin: 0 1%;
+  margin: 0 15px;
   height: 100%;
   @media only screen and (max-width: 700px) {
-    margin: 1% 0;
+    margin: 15px 0;
   }
 `;
 

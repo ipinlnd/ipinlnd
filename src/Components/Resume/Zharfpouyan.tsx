@@ -11,7 +11,7 @@ import {
 export const Zharfpouyan = () => {
   return (
     <SectionContainer
-      style={{ justifyContent: "flex-start" }}
+      style={{ justifyContent: "flex-start", paddingTop: "80px" }}
       color="#E9DB54"
       height="100vh"
     >
@@ -20,7 +20,7 @@ export const Zharfpouyan = () => {
       </TitleLink>
       <Title2 fontColor="#354136">Software Developer</Title2>
       <Title2 fontColor="#354136">April 2015 - December 2018</Title2>
-      <RowContainer>
+      <RowContainer padding="0 10px">
         <SharedComponents.RowItem>
           <p style={{ fontSize: 18, color: "#354137", textAlign: "left" }}>
             The company’s main product was network routers. I, as a c/c++
