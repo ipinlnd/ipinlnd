@@ -5,6 +5,7 @@ import { BrowserRouter, Switch, Route, Link } from "react-router-dom";
 import { P312020 } from "../Components/Blog/p3-1-2020";
 import DocumentMeta from "react-document-meta";
 import { P5242020 } from "../Components/Blog/p5-24-2020";
+import { P08082020 } from "../Components/Blog/p08-08-2020";
 
 const meta = {
   title: "ipinlnd:blog",
@@ -31,6 +32,9 @@ export const Blog = () => {
         </SharedComponents.Header>
         <BrowserRouter>
           <Switch>
+            <Route path="/blog/08-08-2020">
+              <P08082020 />
+            </Route>
             <Route path="/blog/3-1-2020">
               <P312020 />
             </Route>

@@ -6,6 +6,20 @@ export const MainContent = () => {
     <SharedComponents.ContentContainer>
       <SharedComponents.BlogShort>
         <SharedComponents.BlogTitle>
+          Vue: The Learning
+          <br />
+          <SharedComponents.BlogDate>08/08/2020</SharedComponents.BlogDate>
+        </SharedComponents.BlogTitle>
+        <SharedComponents.BlogDescr>
+          In this article, I’ll go through creating a Todo application with 3
+          boards (Todo, Doing and Done).
+        </SharedComponents.BlogDescr>
+        <SharedComponents.ReadMore to="/blog/08-08-2020">
+          Read More...
+        </SharedComponents.ReadMore>
+      </SharedComponents.BlogShort>
+      <SharedComponents.BlogShort>
+        <SharedComponents.BlogTitle>
           Alice
           <br />
           <SharedComponents.BlogDate>05/24/2020</SharedComponents.BlogDate>

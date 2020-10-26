@@ -5,11 +5,16 @@
   overflow-y: hidden;
 }
 
-path {
-  fill: red;
-}
-
-::-webkit-scrollbar {
+.App::-webkit-scrollbar {
   display: none;
   overflow: hidden;
+}
+
+.App::-moz-scrollbar {
+  display: none;
+  overflow: hidden;
+}
+
+path {
+  fill: red;
 }

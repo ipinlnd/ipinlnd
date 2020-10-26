@@ -9,7 +9,7 @@ export const OtherActivities = () => {
       color="#384E3B"
       style={{ justifyContent: "flex-start", paddingTop: "80px" }}
     >
-      <Title style={{ marginBottom: "15px" }}>Other Activities</Title>
+      <Title style={{ margin: "10px" }}>Other Activities</Title>
       <RowContainer width="100%" padding="0 10px" alignItems="flex-start">
         <Card margin="10px" height="200px" color="#AFB8B1" style={{ flex: 1 }}>
           <strong>Moodler</strong> <br />

@@ -76,7 +76,7 @@ class Slider extends React.Component<Props, State> {
         style={{
           height: "100vh",
           width: "fit-content",
-          display: "flex",
+          display: "inline-flex",
           justifyContent: "flex-start",
         }}
       >

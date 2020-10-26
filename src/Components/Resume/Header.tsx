@@ -83,7 +83,7 @@ const BottomBackground = styled.div`
   top: ${(props: SectionProps) => (props.visible ? "50%" : "0%")};
   transition: 1s;
   position: absolute;
-  background-color: #051111;
+  background-color: #06131f;
   z-index: 0;
 `;
 
@@ -102,7 +102,7 @@ const MainContainer = styled.div`
 
 const Avatar = styled.img`
   border-radius: 100%;
-  border: 10px solid #051111;
+  border: 10px solid #06131f;
   width: ${(props: SectionProps) => (props.visible ? "300px" : "50px")};
   cursor: ${(props: SectionProps) => (props.visible ? "unset" : "pointer")};
   transition: 1s;
