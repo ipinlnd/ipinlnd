@@ -46,6 +46,7 @@ const FadeInContent = styled.div`
   justify-content: flex-start;
   align-items: center;
   overflow-y: auto;
+  overflow-x: hidden;
   div {
     opacity: ${(props: Props) => (props.visible ? "1" : "0")};
     transition: opacity 1s 0.2s;
