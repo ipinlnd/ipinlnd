@@ -9,7 +9,10 @@ export const Outroduction = () => {
         <Title>Outroduction</Title>
         <Paragraph>
           If you got tired of scrolling through this, here's
-          <Link href="/Ali Rezaee.pdf"> the pdf file of my CV</Link>
+          <Link style={{ textDecoration: "underline" }} href="/Ali Rezaee.pdf">
+            {" "}
+            the pdf file of my CV
+          </Link>
         </Paragraph>
       </SharedComponents.FadeInContent>
     </SectionContainer>

@@ -24,7 +24,7 @@ export const Skills = () => {
             <h1>ASP.NET, MVC, C#</h1>
           </SharedComponents.GridCard>
           <SharedComponents.GridCard>
-            <h1>SQL, MySQL, MongoDB, Postresql</h1>
+            <h1>SQL, MySQL</h1>
           </SharedComponents.GridCard>
           <SharedComponents.GridCard>
             <h1>C, C++</h1>

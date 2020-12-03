@@ -3,6 +3,7 @@
   scroll-behavior: smooth;
   touch-action: none;
   overflow-y: hidden;
+  scrollbar-width: thin;
 }
 
 .App::-webkit-scrollbar {
